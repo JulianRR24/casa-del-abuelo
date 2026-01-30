@@ -92,8 +92,11 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6 col-lg-4 mb-4">  
               <div class="video-item">
                 <h4>Video 1: Recuerdos 2025 y despedida</h4>
-                <div class="video-wrapper">
-                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/Uwtc6iukNz4?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/watch?v=Uwtc6iukNz4')">
+                  <img src="https://img.youtube.com/vi/Uwtc6iukNz4/maxresdefault.jpg" alt="Recuerdos 2025 y despedida" />
+                  <div class="play-button">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="video-fallback">
                   <a href="https://www.youtube.com/watch?v=Uwtc6iukNz4" target="_blank" class="btn-youtube">
@@ -105,8 +108,11 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="video-item">
                 <h4>Video 2: Cumpleaños septiembre reacciones</h4>
-                <div class="video-wrapper">
-                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/ABULPCKutqo?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/watch?v=ABULPCKutqo')">
+                  <img src="https://img.youtube.com/vi/ABULPCKutqo/maxresdefault.jpg" alt="Cumpleaños septiembre reacciones" />
+                  <div class="play-button">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="video-fallback">
                   <a href="https://www.youtube.com/watch?v=ABULPCKutqo" target="_blank" class="btn-youtube">
@@ -118,8 +124,11 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="video-item">
                 <h4>Video 3: Cumpleaños septiembre video</h4>
-                <div class="video-wrapper">
-                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/yIbt0dP4ogk?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/watch?v=yIbt0dP4ogk')">
+                  <img src="https://img.youtube.com/vi/yIbt0dP4ogk/maxresdefault.jpg" alt="Cumpleaños septiembre video" />
+                  <div class="play-button">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="video-fallback">
                   <a href="https://www.youtube.com/watch?v=yIbt0dP4ogk" target="_blank" class="btn-youtube">
@@ -131,8 +140,11 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="video-item">
                 <h4>Video 4: Encuentro con vereda buenos aires</h4>
-                <div class="video-wrapper">
-                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/POQz_YzLtkg?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/watch?v=POQz_YzLtkg')">
+                  <img src="https://img.youtube.com/vi/POQz_YzLtkg/maxresdefault.jpg" alt="Encuentro con vereda buenos aires" />
+                  <div class="play-button">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="video-fallback">
                   <a href="https://www.youtube.com/watch?v=POQz_YzLtkg" target="_blank" class="btn-youtube">
@@ -144,8 +156,11 @@ https://templatemo.com/tm-531-reflux
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="video-item">
                 <h4>Video 5: Cumpleaños mensajes de familiares</h4>
-                <div class="video-wrapper">
-                  <iframe width="100%" height="250" src="https://www.youtube.com/embed/D6-pxm_RW6c?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/watch?v=D6-pxm_RW6c')">
+                  <img src="https://img.youtube.com/vi/D6-pxm_RW6c/maxresdefault.jpg" alt="Cumpleaños mensajes de familiares" />
+                  <div class="play-button">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
                 </div>
                 <div class="video-fallback">
                   <a href="https://www.youtube.com/watch?v=D6-pxm_RW6c" target="_blank" class="btn-youtube">
@@ -290,6 +305,11 @@ https://templatemo.com/tm-531-reflux
       $(window).scroll(function() {
         checkSection();
       });
+
+      // Función para abrir videos en nueva pestaña
+      function openVideo(videoUrl) {
+        window.open(videoUrl, '_blank');
+      }
     </script>
   </body>
 </html>
